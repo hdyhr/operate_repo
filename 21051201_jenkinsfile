@@ -14,6 +14,7 @@ pipeline {
           stage('21051201 Stage Three') {
           steps {
                  sh '''#!/bin/bash
+                 sudo chmod 666 /var/run/docker.sock
                  targets=websvr_21051201;
                  locate_script='/21051201/script_dir/21051201_script';
                  docker cp $locate_script $targets://$locate_script;
