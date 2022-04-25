@@ -6,6 +6,6 @@ puppet resource file /21051201/clone ensure=absent force=true
 puppet resource file /21051201 ensure=directory
 puppet resource file /21051201/clone ensure=directory
 cd /21051201/clone
-git clone https://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@github.com/hdyhr-git/operate_repo.git
+git clone https://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@github.com/hdyhr/operate_repo.git
 cp -p /21051201/clone/operate_repo/index.html /var/www/html
 
